@@ -39,10 +39,14 @@ app.use((err, req, res, next) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`\n🚀 =================================================`);
-  console.log(`🔥 FitCoach AI API Server Running!`);
-  console.log(`🔌 Local Endpoint: http://localhost:${PORT}`);
-  console.log(`🎯 DB Status: ${dbConnection.isMongoDB ? 'MongoDB (Production)' : 'Local JSON File (Sandbox)'}`);
-  console.log(`================================================= 🚀\n`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 =================================================`);
+    console.log(`🔥 FitCoach AI API Server Running!`);
+    console.log(`🔌 Local Endpoint: http://localhost:${PORT}`);
+    console.log(`🎯 DB Status: ${dbConnection.isMongoDB ? 'MongoDB (Production)' : 'Local JSON File (Sandbox)'}`);
+    console.log(`================================================= 🚀\n`);
+  });
+}
+
+export default app;
