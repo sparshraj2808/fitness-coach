@@ -1,0 +1,54 @@
+/* theme.css - Futuristic Neon Fitness Design System Variables */
+
+:root {
+  /* Obsidian Space Core Backgrounds */
+  --bg-primary: #060a13;
+  --bg-secondary: #0b1120;
+  --bg-tertiary: #111a30;
+  
+  /* Glassmorphism & Translucents */
+  --glass-bg: rgba(13, 22, 42, 0.6);
+  --glass-bg-hover: rgba(20, 32, 59, 0.75);
+  --glass-border: rgba(0, 240, 255, 0.15);
+  --glass-border-hover: rgba(57, 255, 20, 0.35);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  /* High-Voltage Neon Accents (HSL for absolute custom opacity control) */
+  --neon-blue: hsl(185, 100%, 50%); /* #00f0ff */
+  --neon-blue-glow: 0 0 12px hsla(185, 100%, 50%, 0.4);
+  --neon-blue-intense: 0 0 20px hsla(185, 100%, 50%, 0.7);
+
+  --neon-green: hsl(110, 100%, 50%); /* #39ff14 */
+  --neon-green-glow: 0 0 12px hsla(110, 100%, 50%, 0.4);
+  --neon-green-intense: 0 0 20px hsla(110, 100%, 50%, 0.7);
+
+  --neon-purple: hsl(280, 100%, 60%); /* #be33ff */
+  --neon-purple-glow: 0 0 12px hsla(280, 100%, 60%, 0.4);
+
+  --neon-red: hsl(355, 100%, 55%); /* #ff1c43 */
+  --neon-red-glow: 0 0 12px hsla(355, 100%, 55%, 0.4);
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-neon-cyan: #00f0ff;
+  --text-neon-lime: #39ff14;
+
+  /* Gradients */
+  --gradient-cyber: linear-gradient(135deg, var(--text-neon-cyan) 0%, var(--text-neon-lime) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(17, 28, 54, 0.8) 0%, rgba(8, 14, 28, 0.9) 100%);
+  --gradient-dark: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+
+  /* Animation Timers & Boundaries */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 14px;
+  --border-radius-lg: 20px;
+  --border-radius-full: 9999px;
+  
+  --max-width-content: 1200px;
+}
